@@ -32,5 +32,13 @@ In this way we can sub categorize games into common genres like Platform, Fighte
 Genres can include #'s so something like 0Best will appear at top of Genre List to get into your favorites quick.
 Sorting is not case sensitive. 
 
+# Settings
+I never implemented a UI for config, however under theme_settings\pegasus-theme-genre-filter.json I did expose the fontsize for the genrefilter.
+
+```
+{"genrefilter.fontsize":32}
+```
+I default to large font size for phone use. However on a Desktop it could go way smaller, so I exposed this prop to make it easy to change on different devices.
+
 # Known Issues
 1. Swipe is not working on Genre Filter. It took forever to get mouse to work and I don't have a touch screen on dev environment so maybe some other time. 
