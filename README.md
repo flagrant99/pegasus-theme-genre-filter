@@ -19,10 +19,10 @@ Sports/Hockey
 Sports/Football 
 
 The Genre Filter selector will be populated with 
-Sports
-Sports/Baseball
-Sports/Hockey
-Sports/Football 
+1. Sports
+2. Sports/Baseball
+3. Sports/Hockey
+4. Sports/Football 
 
 In this way we can sub categorize games into common genres like Platform, Fighter, Arcade, Sports, etc. Genres can inlucde #'s so something like
 0Best will appear at top of Genre List to get into your favorites quick. Sorting is not case sensitive. 
