@@ -33,4 +33,4 @@ Genres can include #'s so something like 0Best will appear at top of Genre List 
 Sorting is not case sensitive. 
 
 # Known Issues
-1. Swipe is not working on Genre Filter.
+1. Swipe is not working on Genre Filter. It took forever to get mouse to work and I don't have a touch screen on dev environment so maybe some other time. 
