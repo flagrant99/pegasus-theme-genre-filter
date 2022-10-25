@@ -14,9 +14,9 @@ The genre filter theme is based on the Grid theme located here https://github.co
 # Populating genre categories
 Inside of metadata.pegasus.txt fill in genre tags with your genres. genre tags should be single string with / or \ splitting up parent child genres. For example
 
-Sports/Baseball
-Sports/Hockey
-Sports/Football 
+1. Sports/Baseball
+2. Sports/Hockey
+3. Sports/Football 
 
 The Genre Filter selector will be populated with 
 1. Sports
