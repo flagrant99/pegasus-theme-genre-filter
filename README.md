@@ -38,7 +38,7 @@ I never implemented a UI for config, however under theme_settings\pegasus-theme-
 ```
 {"genrefilter.fontsize":32}
 ```
-I default to large font size for phone use. However on a Desktop it could go way smaller, so I exposed this prop to make it easy to change on different devices.
+I default to large 32 Pixel font size for phone use. However on a Desktop it could go way smaller, so I exposed this prop to make it easy to change on different devices. The selected genre text is double this font size. 
 
 # Known Issues
 1. Swipe is not working on Genre Filter. It took forever to get mouse to work and I don't have a touch screen on dev environment so maybe some other time. 
