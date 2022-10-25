@@ -1,5 +1,13 @@
 # pegasus-theme-genre-filter
-A genre filter them for pegasus front end
+The genre filter theme is based on the Grid theme located here https://github.com/mmatyas/pegasus-theme-grid.
+## Changes From Grid Theme
+1. Added Genre Filter
+2. Removed favorites filter
+3. Removed Multiplayer filter
+4 Changed some colors and moved around some in Game Details
 
-I used Grid theme for Pegasus as a starting point.
-https://github.com/mmatyas/pegasus-theme-grid
+# Screenshots
+
+# Installation
+
+
