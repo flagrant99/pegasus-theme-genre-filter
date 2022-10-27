@@ -7,7 +7,7 @@ The genre filter theme is based on the Grid theme located here https://github.co
 1. Added Genre Filter
 2. Removed favorites filter
 3. Removed Multiplayer filter
-4 Changed some colors and moved around some in Game Details
+4. Changed some colors and moved around some text in Game Details
 
 # Screenshots
 
