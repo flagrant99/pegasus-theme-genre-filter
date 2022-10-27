@@ -1,4 +1,7 @@
 # pegasus-theme-genre-filter
+
+A theme for the [Pegasus](http://pegasus-frontend.org) frontend.
+
 The genre filter theme is based on the Grid theme located here https://github.com/mmatyas/pegasus-theme-grid.
 ## Changes From Grid Theme
 1. Added Genre Filter
@@ -10,6 +13,9 @@ The genre filter theme is based on the Grid theme located here https://github.co
 
 # Installation
 
+If you wish to install a copy of it manually, just [download](https://github.com/flagrant99/pegasus-theme-genre-filter/archive/master.zip) and extract it to your [theme directory]
+(http://pegasus-frontend.org/docs/user-guide/installing-themes). 
+You can then select the theme in the settings menu of Pegasus.
 
 # Populating genre categories
 To make the genre filter work metadata.pegasus.txt has to have genre meta data populated. games without a genre tag in metadata.pegasus.txt will simply appear under the ALL genre. genre tags should be single string with / or \ splitting up parent child genres. For example
@@ -42,3 +48,9 @@ I default to large 32 Pixel font size for phone use. However on a Desktop it cou
 
 # Known Issues
 1. Swipe is not working on Genre Filter. It took forever to get mouse to work and I don't have a touch screen on dev environment so maybe some other time. 
+
+
+## License
+
+[![CC-BY-NC-SA](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+
