@@ -25,49 +25,85 @@ Item {
 
     signal launchRequested
 
-    onVisibleChanged: {
+    onVisibleChanged: 
+    {
         if (visible)
             scrollArea.restartScroll();
         else
             scrollArea.stopScroll();
     }
 
-        // title
-        Text {
-            id : game_title_text
-            color: "#f5425d"
-            text: (game && game.title) || ""
+    Column
+    {
+        id : fileProps
+        width: parent.width
+
+            // File Name
+            Text 
+            {
+                
+                color: "#f5425d"
+                text: (game && game.files.get(0).path.replace(/^.*[\\\/]/, '')) || ""
 
 
-            font {
-                pixelSize: vpx(16)
-                family: globalFonts.sans
-                underline : true
-            }
-        }
+                font 
+                {
+                    pixelSize: vpx(16)
+                    family: globalFonts.sans
+                    underline : true
+                }
+            }//end of Text
+
+
+            //FilePath
+            Text 
+            {
+                width: parent.width
+                color: "#f5425d"
+                text: (game && game.files.get(0).path) || ""
+                elide: Text.ElideRight
+
+
+                font 
+                {
+                    pixelSize: vpx(16)
+                    family: globalFonts.condensed
+                }
+                horizontalAlignment: Text.AlignLeft
+            }//end of Text
+            bottomPadding: vpx(8)
+    }
+
+
 
 
     // description
-    PegasusUtils.AutoScroll {
+    PegasusUtils.AutoScroll 
+    {
         id: scrollArea
         width: parent.width
-        anchors.top: game_title_text.bottom
+        anchors.top: fileProps.bottom
         anchors.bottom: playtimes.top
 
-        Text {
+        Text 
+        {
             color: "#eee"
             text: (game && game.description) || ""
             width: parent.width
             wrapMode: Text.WordWrap
             horizontalAlignment: Text.AlignJustify
-            font {
+            font 
+            {
                 pixelSize: vpx(16)
                 family: globalFonts.sans
             }
         }
     }
 
-    Column {
+
+
+    Column 
+    {
         id: playtimes
         width: parent.width
         anchors.bottom: actionButtons.top
@@ -80,7 +116,8 @@ Item {
         readonly property int labelSpacing: labelFontSize / 2
         readonly property int labelFontSize: vpx(17)
 
-        Row {
+        Row 
+        {
             width: parent.width
             spacing: playtimes.labelSpacing
 
@@ -121,9 +158,10 @@ Item {
                     family: globalFonts.sans
                 }
             }
-        }
+        }//end of Row 
 
-        Row {
+        Row 
+        {
             width: parent.width
             spacing: playtimes.labelSpacing
 
@@ -139,7 +177,8 @@ Item {
                 horizontalAlignment: Text.AlignRight
             }
 
-            Text {
+            Text 
+            {
                 text: {
                     if (!game)
                         return "-";
@@ -153,9 +192,11 @@ Item {
                 color: "#eee"
                 font {
                     pixelSize: playtimes.labelFontSize
-                    family: globalFonts.sans
+                    family: globalFonts.condensed
                 }
             }
+
+
         }
     }
 
@@ -191,7 +232,7 @@ Item {
         {
             id: launchBtn
             text: "Launch"
-            lineHeight: 2.5
+            lineHeight: 2
 
             focus: true
             Keys.onPressed: 
