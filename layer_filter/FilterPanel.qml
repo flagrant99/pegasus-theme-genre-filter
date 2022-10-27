@@ -76,17 +76,6 @@ FocusScope
         }
     }    
 
-
-    //***********************ON_RETURN_PRESSED*******************f*****
-    function gvOnReturnPressed()
-    {
-        //var selectedGenre = genreModel.get(genreView.currentIndex).genre;
-        //console.log("gvOnReturnPressed")
-        //console.log(selectedGenre);
-        //withFolder=selectedGenre;
-        closeRequested();
-    }
-
     ListView 
     {
         id: genreView
@@ -113,7 +102,20 @@ FocusScope
         {
             width:vpx(500);
             height:genreView.currentIndex == index ? vpx(filter.gf_fontsizeSel) : vpx(filter.gf_fontsize);
-            Keys.onReturnPressed: gvOnReturnPressed();
+            
+            Keys.onPressed: 
+            {
+                if (api.keys.isAccept(event) && !event.isAutoRepeat) 
+                {
+                    closeRequested();
+                }
+
+                if (api.keys.isCancel(event) && !event.isAutoRepeat) 
+                {
+                    closeRequested();                    
+                }
+            }
+            
             Keys.onRightPressed:  closeRequested();
             Keys.onLeftPressed:  closeRequested();
 
