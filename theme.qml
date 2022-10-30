@@ -71,7 +71,7 @@ FocusScope {
     //***********************ON_PLATORM_CHANGED***********************
     function onPlatformChanged() 
     {
-        //console.log("onPlatformChanged()");
+        console.log("onPlatformChanged()");
         gamegrid.cells_need_recalc();
         initFolders();
     }
@@ -163,6 +163,7 @@ FocusScope {
     Component.onCompleted: 
     {
         console.log("Component.onCompleted()");
+
         var genre_filter_font_size = api.memory.get('genrefilter.fontsize');
         if (!genre_filter_font_size)
         {
@@ -185,9 +186,13 @@ FocusScope {
             .toVarArray()
             .findIndex(c => c.name === last_collection);
         if (last_coll_idx < 0)
+        {
+            initFolders();
             return;
+        }
 
         topbar.currentIndex = last_coll_idx;
+        initFolders();
 
         const last_game = api.memory.get('game');
         if (!last_game)

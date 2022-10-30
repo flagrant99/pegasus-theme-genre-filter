@@ -117,7 +117,7 @@ FocusScope
             }
             
             Keys.onRightPressed:  closeRequested();
-            Keys.onLeftPressed:  closeRequested();
+            //Keys.onLeftPressed:  closeRequested();
 
             //Rectangle 
             //{

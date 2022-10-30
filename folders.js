@@ -69,5 +69,6 @@ function InitFolders(games_arr)
         //console.log(key  +' -> ' + value);  
     //}       
  
+    console.log('genres detected: ' + g_FoldersMap.size);  
 return;
 }
