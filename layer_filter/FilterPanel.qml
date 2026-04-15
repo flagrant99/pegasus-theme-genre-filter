@@ -87,7 +87,10 @@ FocusScope
         keyNavigationWraps: true        
         delegate : genreDelegate
         onCurrentItemChanged : gvOnItemChanged()
-
+        interactive: true
+        clip: false
+        width: vpx(500)
+	
         highlightRangeMode: ListView.ApplyRange
         highlightMoveDuration: 0
         preferredHighlightBegin: height * 0.5 - vpx(18)
@@ -139,14 +142,16 @@ FocusScope
                 color: genreView.currentIndex == index ? "orange" : "white"
             }//end ot Text
 
-            MouseArea
-            {
-                anchors.fill: parent
-                onClicked: 
-                {
-                    console.log("Mouse Clicked in ListView");
-                    genreView.currentIndex = index;
-                }
+		MouseArea 
+		{
+		    anchors.fill: parent
+		    // Use selectOnPressed if you want the item to change instantly
+		    onPressed: {
+	        genreView.currentIndex = index;
+	        // Setting accepted to false here allows the ListView to steal 
+	        // the event for a drag/swipe if the user moves their finger.
+	        mouse.accepted = false; 
+	    }
             }//end of MouseArea            
         }//end of Item
     }//end of Component
