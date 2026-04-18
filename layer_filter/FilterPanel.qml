@@ -27,6 +27,8 @@ FocusScope
 
 
     id: root
+    focus: true
+    onActiveFocusChanged: if (!activeFocus) closeRequested()
 
     //property alias withFolder: selectedFolder
     property string withFolder : "ALL"

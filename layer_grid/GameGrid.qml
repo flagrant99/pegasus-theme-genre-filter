@@ -126,9 +126,13 @@ FocusScope {
             collection: root.baseCollection
             game: modelData
 
-            onClicked: GridView.view.currentIndex = index
+            onClicked: {
+                GridView.view.currentIndex = index;
+                root.focus = true;
+            }
             onDoubleClicked: {
                 GridView.view.currentIndex = index;
+                root.focus = true;
                 root.detailsRequested();
             }
             Keys.onPressed: {
