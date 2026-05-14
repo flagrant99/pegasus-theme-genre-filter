@@ -10,7 +10,7 @@ The genre filter theme is based on the Grid theme located here https://github.co
 4. Changed some colors and moved around some text in Game Details
 
 # Screenshots
-![Arcade](https://github.com/flagrant99/pegasus-theme-genre-filter/raw/master/.github/wiki-images/Arcade.jpg)
+![Arcade](./.github/wiki-images/Arcade.jpg)
 
 # Installation
 
