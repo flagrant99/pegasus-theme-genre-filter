@@ -3,6 +3,8 @@
 A theme for the [Pegasus](http://pegasus-frontend.org) frontend.
 
 The genre filter theme is based on the Grid theme located here https://github.com/mmatyas/pegasus-theme-grid.
+
+More themse are here: https://pegasus-frontend.org/tools/themes/
 ## Changes From Grid Theme
 1. Added Genre Filter
 2. Removed favorites filter
