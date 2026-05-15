@@ -50,6 +50,15 @@ I never implemented a UI for config, however under theme_settings\pegasus-theme-
 ```
 I default to large 32 Pixel font size for phone use. However on a Desktop it could go way smaller, so I exposed this prop to make it easy to change on different devices. The selected genre text is double this font size to make selection obvious.
 
+# Controls
+## Touch
+Swipe right from left side of screen  to access Genre Filter and Launch Buttons. Pressing Genre Filter Button opens the Genre Filter. Scroll up and down and select to select Genre Categories and filter on the fly.
+Select a game on the right to close the Genre Filter and focus on the the game selected.
+
+## Joystick
+Press North button to access Genre Filter.
+Press West Button to access Detail with Genre Filter and Launch Buttons.
+
 # Known Issues
 1. Swipe is not working on Genre Filter. It took forever to get mouse to work and I don't have a touch screen on dev environment so maybe some other time. 
 
