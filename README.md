@@ -59,9 +59,11 @@ Select a game on the right to close the Genre Filter and focus on the the game s
 Press North button to access Genre Filter.
 Press West Button to access Detail with Genre Filter and Launch Buttons.
 
-# Known Issues
-1. Swipe is not working on Genre Filter. It took forever to get mouse to work and I don't have a touch screen on dev environment so maybe some other time. 
+![Arcade](./.github/wiki-images/GFButton.jpg)
 
+![Arcade](./.github/wiki-images/Driving.jpg)
+
+![Arcade](./.github/wiki-images/Sports.jpg)
 
 ## License
 
