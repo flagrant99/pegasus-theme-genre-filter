@@ -12,7 +12,6 @@ More themese are here: https://pegasus-frontend.org/tools/themes/
 3. Removed Multiplayer filter
 4. Changed some colors and moved around some text in Game Details
 
-# Screenshots
 ![Arcade](./.github/wiki-images/Arcade.jpg)
 
 # Installation
